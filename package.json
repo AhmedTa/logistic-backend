@@ -2,9 +2,11 @@
   "name": "backend",
   "version": "1.0.0",
   "description": "This is backend of Logistic Management Application",
-  "main": "index.js",
+  "main": "./dist/server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "ts-node ./lib/server.ts",
+    "dev": "tsc && nodemon ./dist/server.js",
+    "prod": "tsc && nodemon ./dist/server.js"
   },
   "repository": {
     "type": "git",
@@ -18,5 +20,15 @@
   "bugs": {
     "url": "https://github.com/AhmedTa/logistic-backend/issues"
   },
-  "homepage": "https://github.com/AhmedTa/logistic-backend#readme"
+  "homepage": "https://github.com/AhmedTa/logistic-backend#readme",
+  "dependencies": {
+    "@types/express": "^4.17.13",
+    "body-parser": "^1.20.0",
+    "express": "^4.18.1",
+    "mongoose": "^6.3.3",
+    "nodemon": "^2.0.16"
+  },
+  "devDependencies": {
+    "@types/mongoose": "^5.11.97"
+  }
 }
