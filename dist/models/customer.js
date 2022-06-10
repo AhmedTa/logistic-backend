@@ -37,6 +37,10 @@ const customerSchema = new mongoose_1.default.Schema({
     zipCode: {
         type: String,
         required: true
+    },
+    status: {
+        type: String,
+        required: true
     }
 });
 customerSchema.statics.build = (attr) => {
