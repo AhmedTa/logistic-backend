@@ -38,7 +38,7 @@ class App {
     }
 
     private connectDB() {
-        mongoose.connect('mongodb+srv://testUser123:testuser123@justconnect.d5dy6.mongodb.net/JustConnect?retryWrites=true&w=majority', {
+        mongoose.connect('', {
             // useCreateIndex: true,
             // useNewUrlParser: true,
             // useUnifiedTopology: true
